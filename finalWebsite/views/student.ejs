@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Matching Info</title>
+</head>
+<body>
+    <h1>Match found! </h1>
+    <h2>Please reach out to one of the students below, and ensure that you both remove yourselves from the waitlist once matched :) </h2>
+
+    <% students.forEach((student, index) => { %>
+        <p>Student <%= index + 1 %></p>
+        <p>First name: <%= student.first_name %></p>
+        <p>Last name: <%= student.last_name %></p>
+        <p>Email: <%= student.email %></p>
+        <p>Phone number: <%= student.phone_number %></p><br>
+        <hr>
+    <% }); %>
+</body>
+</body>
+<img src="/images/davidson_logo.png" alt="Davidson Image",  style="width: 500px; height: 300px;">
+</html>

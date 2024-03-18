@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>My Final Webpage</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="style_basic.css">
+</head>
+
+<body>
+	<ul id="myList">
+	</ul>
+
+	<hr>
+
+	<h2> Add/Drop classes </h2>
+	<h3>Enter the class information and your personal information click on the submit button to 
+		add/drop a class
+	</h3>
+	<form action="/student" method="GET">
+		<label for="crn-num">CRN number:</label>
+		<input type="text" id="crn-num" name="crn-num" placeholder="(required)" required><br>
+		<label for="add-drop">Add/Drop:</label>
+		<select type="text" id="add-drop" name="add-drop">
+            <option value = "Add"> Add </option>
+            <option value = "Drop"> Drop </option>
+        </select><br>
+
+		<label for="student-id">Student ID Number:</label>
+		<input type="text" id="student-id" name="student-id" placeholder="(required)" required><br>
+        <label for="first-name">First Name:</label>
+		<input type="text" id="first-name" name="first-name" placeholder="(required)" required><br>
+        <label for="last-name">Last Name:</label>
+		<input type="text" id="last-name" name="last-name" placeholder="(required)" required><br>
+        <label for="email">Davidson Email Address:</label>
+		<input type="text" id="email" name="email" placeholder="(required)" required><br>
+        <label for="phone-number">Phone Number:</label>
+		<input type="text" id="phone-number" name="phone-number" placeholder="(required)" required><br>
+		
+		<input type="submit" value="Submit">
+	</form>
+
+	<div class = "divider"></div>
+
+
+	<h2> Delete Yourself From Waitlist </h2>
+	<h3> If you have successfully matched with somebody, please enter the CRN number and your Student ID number to 
+		delete yourself from our system
+	</h3>
+	<form action="/delete" method="GET">
+		<label for="crn-num">CRN Number:</label>
+		<input type="text" id="crn-num" name="crn-num" placeholder="(required)" required><br>
+		<label for="student-id">Student ID Number:</label>
+		<input type="text" id="student-id" name="student-id" placeholder="(required)" required><br>
+
+		<input type="submit" value="Submit">
+	</form>
+
+	<div class="divider"></div>
+</body>
+
+<script>
+
+</script>
+
+</html>
